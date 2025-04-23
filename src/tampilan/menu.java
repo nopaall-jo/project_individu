@@ -30,10 +30,10 @@ public class menu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        MenuPelanggan = new javax.swing.JMenu();
+        menuPelanggan = new javax.swing.JMenuItem();
+        menuKasir = new javax.swing.JMenuItem();
+        menuBarang = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
 
@@ -44,38 +44,38 @@ public class menu extends javax.swing.JFrame {
 
         jLabel2.setText("Pemrograman Visual");
 
-        jMenu1.setText("Master");
-        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+        MenuPelanggan.setText("Master");
+        MenuPelanggan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu1ActionPerformed(evt);
+                MenuPelangganActionPerformed(evt);
             }
         });
 
-        jMenuItem1.setText("Pelanggan");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        menuPelanggan.setText("Pelanggan");
+        menuPelanggan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                menuPelangganActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        MenuPelanggan.add(menuPelanggan);
 
-        jMenuItem2.setText("Kasir");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        menuKasir.setText("Kasir");
+        menuKasir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                menuKasirActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        MenuPelanggan.add(menuKasir);
 
-        jMenuItem3.setText("Barang");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        menuBarang.setText("Barang");
+        menuBarang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                menuBarangActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem3);
+        MenuPelanggan.add(menuBarang);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(MenuPelanggan);
 
         jMenu2.setText("Transaksi");
 
@@ -112,26 +112,30 @@ public class menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void menuPelangganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPelangganActionPerformed
         // TODO add your handling code here:
         Pelanggan mp = new Pelanggan();
         mp.setVisible(true);
         mp.setLocationRelativeTo(null);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_menuPelangganActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        Kasir mk = new Kasir();
-        mk.setVisible(true);
-        mk.setLocationRelativeTo(null);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    private void menuKasirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuKasirActionPerformed
+        Kasir kasir = new Kasir();
+        kasir.setVisible(true);
+        kasir.setLocationRelativeTo(null);
+    }//GEN-LAST:event_menuKasirActionPerformed
 
-    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+    private void MenuPelangganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuPelangganActionPerformed
+        Pelanggan pelanggan = new Pelanggan();
+        pelanggan.setVisible(true);
+        pelanggan.setLocationRelativeTo(null);
+    }//GEN-LAST:event_MenuPelangganActionPerformed
 
-    }//GEN-LAST:event_jMenu1ActionPerformed
-
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    private void menuBarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBarangActionPerformed
+        barang barang = new barang();
+        barang.setVisible(true);
+        barang.setLocationRelativeTo(null);
+    }//GEN-LAST:event_menuBarangActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,14 +173,14 @@ public class menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu MenuPelanggan;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem menuBarang;
+    private javax.swing.JMenuItem menuKasir;
+    private javax.swing.JMenuItem menuPelanggan;
     // End of variables declaration//GEN-END:variables
 }

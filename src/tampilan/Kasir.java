@@ -65,6 +65,7 @@ public class Kasir extends javax.swing.JFrame {
                     txtalamat.setText(tablekasir.getValueAt(baris, 3).toString());
                     txttelp.setText(tablekasir.getValueAt(baris, 4).toString());
                     txtpass.setText(tablekasir.getValueAt(baris, 5).toString());
+                    txttanggal.setText(tablekasir.getValueAt(baris, 6).toString());
                 }
             }
         });
